@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+<title>Intro to Vue</title>
+</head>
+
+<body>
+  <main id="app">
+    <h3>{{welcomemessage}}</h3>
+
+    <ul>
+      <li v-for="fruit in yummyFruit">
+        <p v-on:click="logClicked">{{ fruit.name }} is {{ fruit.flavour }}</p>
+      </li>
+      <p v-if="hasVue">
+        {{ vuemessage }}
+      </p>
+    </ul>
+  </main>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
